@@ -795,7 +795,7 @@ u{
    /*Keep spcae before and after '-' sign*/
 }
 .bookingHeadingDiv{
-  overflow-x: hidden;
+  overflow: hidden;
   padding: 0;
   /* margin: 0 !important; */
   margin-top: 10vh;
@@ -1062,12 +1062,15 @@ u{
   
 }
 .slider .card img{
-  height: 25vh;
+  height: 50%;
+
 }
 .slider .card-body{
+  height: 50%;
   margin-top: 10%;
   color: white;
-  font-size: 1.2vw;
+  font-size: 1.8vw;
+  text-align: justify;
 
 }
 .slider .card-title{
@@ -1706,14 +1709,11 @@ canvas.BWECanvas{
   height: 100vh;
   width: 100%;
   z-index: 10;
-  padding: 0;
-  margin: 0 !important;
-  padding: 0;
+
 }
 
 .modelGame{
   position: relative;
-  background-color: red;
   height: 100%;
   width: 100%;
 
@@ -2237,6 +2237,7 @@ canvas.BWECanvas{
 .contact .php-email-form input[type=text],
 .contact .php-email-form input[type=email] {
   height: 44px;
+  width: 100%;
 }
 
 .contact .php-email-form textarea {
@@ -2245,11 +2246,12 @@ canvas.BWECanvas{
 
 .contact .php-email-form button[type=submit] {
   background: #0563bb;
-  border: 0;
-  padding: 10px 35px;
+
+
   color: #fff;
   transition: 0.4s;
-  border-radius: 50px;
+  width: 100%;
+  height: 100%;
 }
 
 .contact .php-email-form button[type=submit]:hover {
@@ -2261,14 +2263,14 @@ canvas.BWECanvas{
 }
 
 .contactBrandRow{
-  height: fit-content;
+  height: 20vh;
 }
 .contactBrandCol1{
-  height: 15vh;
-  background-color: red;
+  height: 20vh;
+  /* background-color: red; */
 }
 .contactBrandCol2{
-  height: 15vh;
+  height: 20vh;
 }
 .contactBrandCol2 img{
   position: absolute;
@@ -2282,6 +2284,7 @@ canvas.BWECanvas{
   background-color: transparent;
   color: white;
   position: absolute;
+  width: 100%;
   border: 1px solid white;
   top: 50%;
   left: 50%;
@@ -2289,7 +2292,12 @@ canvas.BWECanvas{
 
 }
 .subscribeButton{
-  text-align: left;
+  text-align: center;
+  height: 44px;
+}
+.mailMessageButton{
+  position: relative;
+  height: 100%;
 }
 
 .contact .emailRow{
@@ -2314,7 +2322,7 @@ canvas.BWECanvas{
 }
 .contactLineDivider{
   position: relative;
-  left: 5%;
+
 }
 .footerImage img{
   height: 5vh;
@@ -2372,10 +2380,13 @@ canvas.BWECanvas{
       margin-top: 10px;
       padding-top: 20px;
       padding-bottom: 20px;
-      border-top-style: solid;
-      border-bottom-style: solid;
+      
       border-right-style: none;
       text-align: center;
+    }
+    .contact .emailRowCol{
+      border-right: none;
+      
     }
     .contactSubscribe{
       text-align: center;
@@ -2384,8 +2395,8 @@ canvas.BWECanvas{
     .contact .textBanner{
       text-align: center;
     }
-    .subscribeRow{
-      transform: translate(8.3%,50%);
+    .unsubscribeRow {
+      text-align: center;
     }
 
 }
