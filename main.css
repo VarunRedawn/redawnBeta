@@ -1107,6 +1107,16 @@ img{
   /* overflow: hidden; */
 }
 
+.BWESectionDiv video{
+  position: absolute;
+  width: 100%;
+  top: 10%;
+  left: 0;
+  height: 60vh;
+  overflow: hidden;
+  z-index: 1;
+}
+
 canvas.BWECanvas{
 
   position: absolute;
@@ -1394,7 +1404,10 @@ canvas.BWECanvas{
   height: 6vh;
   width: 6vh;
 }
-
+.reviewHeading2 img.hs{
+  height: 6vh;
+  width: 3vh;
+}
 .reviewSectionDiv{
   height: 60vh;
   padding: 0;
@@ -1952,22 +1965,22 @@ canvas.BWECanvas{
   align-items: center; 
   justify-content: center; 
   background-color:black; 
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .compTimelineDiv img{
   position: absolute;
-  bottom: 0;
+  bottom: -20%;
   left: 0;
   height: 100%;
   width: 100%;
   z-index: 0;
 }
 #compTimeline{
-  position: relative;
+  position: absolute;
   width: 100%;
   height: 30vh;
-  z-index: 2;
-  top: 0;
+  z-index: 500;
+  top: -10%;
 }
 
 .carousel-col{
@@ -1977,10 +1990,15 @@ canvas.BWECanvas{
   color: white;
   /* margin-bottom: 10vh; */
 }
+.carousel-col p{
+  font-size: 20px;
+  color: white;
+}
    
 
 .carousel-control-prev , .carousel-control-next {
   position: absolute;
+  font-family: 'A4 Speed Bold', sans-serif;
   /* background-color: red; */
   top: 50%;
   transform: TranslateY(-50%);
@@ -2002,6 +2020,8 @@ canvas.BWECanvas{
   position: absolute;
 }
 .contact{
+  position: relative;
+  z-index: 100;
   padding-top: 50px;
   background-color: #E6E6E6;
 }
