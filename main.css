@@ -15,7 +15,7 @@
   box-sizing: border-box;
   white-space: no-wrap;
   text-decoration: none;
-  /* border: 1px solid white;                  */
+  /* border: 1px solid white; */
   
 }
 *:focus{
@@ -104,7 +104,7 @@ img{
 .navbarBrandImage{
   
   margin-left: 20px;
-  height: 80px;
+  height: 60px;
   pointer-events: none;
 }
 .nav-link{ 
@@ -126,10 +126,19 @@ img{
   font-weight: 500;
   font-size: 2vw;
 }
+.navbar-nav > li .loginNav{
+ 
+  position: relative;
+  top: 50%;
+  transform: translate(0%,-50%);
+}
 .navbar-nav > li .discord{
+  cursor: pointer;
+  text-align: center;
+  padding-top: 5px;
   text-transform: uppercase;
   font-family: 'Teko', sans-serif;
-  line-height: 2.2vw;
+  /* line-height: 2vw; */
   font-size: 2vw;
   font-weight: 500;
   background: rgb(189,160,0);
@@ -137,10 +146,9 @@ img{
   color: black;  
   outline: none;
   border: none;   
-  width: 10vw; 
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-top: 5px;
+  width: 9vw; 
+
+  /* margin-top: 5px; */
   
 }
 .visuallyHidden {
@@ -515,14 +523,24 @@ img{
 
  
   .videoHeadingButton{
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.5vw;
+   
+    font-family: 'Teko', sans-serif;
+    padding-top: 0.6vw;
+    line-height: 2vw;
+    font-size: 2vw;
     font-weight: 600;
     text-align: center;
-    /* width: 100%; */
-    background-color: #414BB2;
+    width: 80%;
+    background: rgb(189,160,0);
+    background: linear-gradient(180deg, rgba(189,160,0,1) 0%, rgba(255,219,73,1) 50%, rgba(227,145,15,1) 100%);
     outline: none;
     border: none;
+    color: black;
+  }
+  .videoHeadingButton:hover{
+   
+    
+    color: black;
   }
   .videoHeadingButton:focus{
     border: none;
@@ -669,9 +687,11 @@ img{
   
 }
 .buyButtonsDiv .socialMediaDiv{
+  margin-top: 5vh;
+  line-height: 0.8;
   text-align: center;
   color: white;
-  font-size: 2vw;
+  font-size: 4vw;
   font-family: 'Teko',sans-serif;
   text-shadow: 1px 1px 1px #000;
 }
@@ -681,15 +701,19 @@ img{
   width: 100%;
   height: auto;
   padding: 0;
-  margin: 0 !important;
+  margin-top: 5vh;
   text-align: center;
   
 }
-.buyButtonsHeading img{
+.buyButtonsHeading a img{
+  
   width: 3vw;
   height: 3vw;
-  margin-left: 0.5vw;
-  
+  margin-right: 2vw;
+}
+.buyButtonsHeading a:last-child img {
+
+  margin-right: 0.1vw;
 }
 .buyButtonsHeadingRow{
   height: 10vh;
@@ -771,7 +795,8 @@ u{
 }
 .bookingHeadingDiv{
   padding: 0;
-  margin: 0 !important;
+  /* margin: 0 !important; */
+  margin-top: 10vh;
 }
 .bookingDiv{
   padding: 0;
@@ -830,6 +855,47 @@ u{
   height: 100vh;
   /* background-color: yellow; */
 }
+.rewardPointHeading0{
+  /* background-color: blue; */
+  height: fit-content;
+  text-align: center;
+  font-size: 3.5vw;
+  padding: 0;
+  font-family: 'A4 Speed Bold', sans-serif;
+}
+.rewardPointHeading0 p.rewardHeading1{
+  background: rgb(255,231,27);
+  background-image: linear-gradient(45deg, rgba(255,231,27,1) 19%, rgba(208,171,24,1) 57%, rgb(154, 102, 28) 87%);
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.rewardPointHeading0::after{
+  content: "";
+  width: 28%;
+  height: 1px;
+  background: rgb(255,231,27);
+  background: linear-gradient(90deg, rgba(154,102,28,0.1) 20%, rgba(255,231,27,0.7) 48%, rgba(208,171,24,1) 60%, rgba(154,102,28,0.1) 100%);
+  border-radius: 50% 50% 50% 50%/50% 50% 50% 50%;
+  position: absolute;
+  z-index: 10;
+  bottom: 50%;
+  left: -20%;
+  
+}
+.rewardPointHeading0::before{
+  content: "";
+  width: 28%;
+  height: 1px;
+  background: rgb(255,231,27);
+  background: linear-gradient(-90deg, rgba(154,102,28,0.1) 20%, rgba(255,231,27,0.7) 48%, rgba(208,171,24,1) 60%, rgba(154,102,28,0.1) 100%);
+  border-radius: 50% 50% 50% 50%/50% 50% 50% 50%;
+  position: absolute;
+  z-index: 10;
+  bottom: 50%;
+  right: -25%;
+  
+}
 .rewardPointHeading{
   /* background-color: blue; */
   height: fit-content;
@@ -872,16 +938,19 @@ u{
   
 }
 .rewardHeading1{
+  margin-top: 5vh;
   text-transform: uppercase;
   font-family: 'A4 Speed Bold', sans-serif;
   line-height: 1;
-  font-size: 4vw;
+  font-size: 6vw;
   font-weight: 900;
   text-align: center;
   color: #fff;
   rotate: -5deg;
-  margin-left: -30vw;
+  margin-left: 0vw;
+
 }
+
 .rewardHeading2{
   text-transform: uppercase;
   font-family: 'A4 Speed Bold', sans-serif;
@@ -891,8 +960,9 @@ u{
   text-align: center;
   color: #fff;
   rotate: -5deg;
-  margin-top: -3vw;
-  background-color: red;
+  margin-top: -2.5vw;
+  margin-left: 1vw;
+  /* background-color: red; */
 
   
 }
@@ -915,10 +985,9 @@ u{
   text-align: center;
   color: #fff;
   rotate: -5deg;
-  margin-top: -2.5vw;
-  margin-left: 12vw;
-  background: rgb(255,231,27);
-  background: linear-gradient(45deg, rgba(255,231,27,1) 21%, rgba(208,171,24,1) 67%, rgba(154,102,28,1) 97%);
+  margin-top: -3.5vw;
+  margin-left: 22vw;
+ 
 }
 .rewardPointHeading2{
   
@@ -1892,7 +1961,8 @@ canvas.BWECanvas{
 }
 .TeamHuddleDiv img{
   position: absolute;
-  height: 100%;
+  /* height: 100%; */
+  width: 100%;
   right: 0;
   /* object-fit: contain;s */
 }
@@ -1980,18 +2050,18 @@ canvas.BWECanvas{
 }
 .compTimelineDiv img{
   position: absolute;
-  bottom: -20%;
+  bottom: -30%;
   left: 0;
   height: 100%;
   width: 100%;
   z-index: 0;
 }
 #compTimeline{
-  position: absolute;
+
   width: 100%;
   height: 30vh;
   z-index: 500;
-  top: -10%;
+
 }
 
 .carousel-col{
@@ -2034,11 +2104,15 @@ canvas.BWECanvas{
   position: relative;
   z-index: 100;
   padding-top: 50px;
-  background-color: #E6E6E6;
+  background-color: #111;
+  color: white;
+  overflow: hidden;
+  text-shadow: 1px 4px 1px black;
 }
 .contact .contactTitle{
   font-weight: 900;
   font-size: 40px;
+  line-height: 0.8;
 }
 .contact .socialIcons{
   text-align: center;
@@ -2183,6 +2257,34 @@ canvas.BWECanvas{
   
 }
 
+.contactBrandRow{
+  height: fit-content;
+}
+.contactBrandCol1{
+  height: 15vh;
+  background-color: red;
+}
+.contactBrandCol2{
+  height: 15vh;
+}
+.contactBrandCol2 img{
+  position: absolute;
+  
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+}
+.contactBrandCol2 button{
+  background-color: transparent;
+  color: white;
+  position: absolute;
+  border: 1px solid white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+}
 .subscribeButton{
   text-align: left;
 }
@@ -2192,7 +2294,7 @@ canvas.BWECanvas{
 }
 
 .contact .emailRowCol{
-  border-right: 3px solid black;
+  border-right: 3px solid white;
   
 }
 .contact .InfoLinkCol{
@@ -2206,6 +2308,17 @@ canvas.BWECanvas{
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+.contactLineDivider{
+  position: relative;
+  left: 5%;
+}
+.footerImage img{
+  height: 5vh;
+  width: 5vh;
+}
+.contactText{
+  margin-top: 5vh;
 }
 
 @media only screen and (max-width: 600px) {
@@ -2287,9 +2400,42 @@ canvas.BWECanvas{
 
 
 
+.card__grid-effect {
+  position: absolute;
+  height: 40vh;
+  z-index: 0;
+  inset: 0;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+}
+.card__grid-effect-tile {
+  position: relative;
+}
+.card__grid-effect-tile:before {
+  content: "";
+  color: rgb(185, 179, 179);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 2px;
+  width: 2px;
+  border-radius: 50%;
+  background: rgb(185, 179, 179);
+  transition: 0.2s ease all;
 
+}
+.card__grid-effect-tile:hover:before {
+  height: 10px;
+  width: 10px;
+  transition: 70ms linear all;
+}
 
-
+.contactRow1{
+  overflow: hidden;
+  /* background-color: red; */
+}
 /*!
  * Bootstrap Icons v1.11.1 (https://icons.getbootstrap.com/)
  * Copyright 2019-2023 The Bootstrap Authors
