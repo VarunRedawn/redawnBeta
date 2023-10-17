@@ -484,8 +484,8 @@ img{
     letter-spacing: 1px;
     line-height: 0.8;
     color: white;
-    font-weight: 600;
-    text-shadow: 1px 1px 2px #111;
+    font-weight: 900;
+    text-shadow: 1px 3px 2px #111;
   }
 
   .videoHeadingDiv2{
@@ -510,7 +510,7 @@ img{
     line-height: 1;
     color: black;
     font-weight: 400;
-    text-shadow: 1px 1px 1px #111;
+    text-shadow: 1px 3px 1px #111;
   }
 
  
@@ -519,7 +519,7 @@ img{
     font-size: 1.5vw;
     font-weight: 600;
     text-align: center;
-    width: 100%;
+    /* width: 100%; */
     background-color: #414BB2;
     outline: none;
     border: none;
@@ -668,6 +668,13 @@ img{
   height: auto;
   
 }
+.buyButtonsDiv .socialMediaDiv{
+  text-align: center;
+  color: white;
+  font-size: 2vw;
+  font-family: 'Teko',sans-serif;
+  text-shadow: 1px 1px 1px #000;
+}
 .buyButtonsHeading{
   background-color: black;
   /* background-color: red; */
@@ -746,6 +753,10 @@ img{
 /* Large device (portrait tablets and large phones, Between 992px - 1100px) */
 @media only screen and (max-width: 1100px) and (min-width: 992px) {
 
+}
+u{
+  text-decoration: underline !important;
+  font-weight: 100;
 }
 
 /*--------------------------------------------------------------
