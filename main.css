@@ -37,6 +37,7 @@ body {
 .loading{
   height: 100vh;
   overflow: hidden;
+  /* display: none; */
 }
 img{
   pointer-events: none;
