@@ -1992,7 +1992,21 @@ background: linear-gradient(90deg, rgba(0,0,0,0.691841702501313) 2%, rgba(0,0,0,
   font-family: 'Teko', sans-serif;
   color: white;
 }
-
+@media only screen and (max-width: 600px) {
+  .BWESectionText{
+    font-size: 5vw;
+    font-family: 'Teko', sans-serif;
+    color: white;
+  }
+  .slider2{
+    position: absolute;
+    z-index: 5000;
+    overflow-x: hidden;
+    top:80vh;
+    height: 20vh;
+    width: 100%;
+  }
+}
 .buttonHeadNav {
   position: relative;
   padding: 16px 30px;
@@ -3173,11 +3187,12 @@ background: linear-gradient(90deg, rgba(0,0,0,0.691841702501313) 2%, rgba(0,0,0,
   }
   .TeamHuddleText{
     position: absolute;
-    top: 50%;
+    top: 60%;
     transform: translate(0%,-50%);
     font-family: 'Teko',sans-serif;
-    font-size: 3vw;
+    font-size: 6vw;
     color: white;
+    text-shadow: 1px 1px 3px black;
   }  
 }
 
