@@ -151,7 +151,9 @@ img{
   align-items: center;
 }
 .circular-progress{
+  /* border: 1px solid white; */
   position: absolute;
+  top: 32%;
   left: 50%;
   transform: translate(-50%,0%);
   z-index: 9999;
@@ -184,7 +186,7 @@ img{
   width: 100%;
   height: fit-content;
   font-size: 2vw;
-  color: white;
+  color: #adacac;
   animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
   /* background-color: red; */
 }
@@ -306,6 +308,80 @@ img{
   animation: floating11 3s 0.2s ease-in-out infinite;
 }
 }
+
+
+/* Large device (portrait tablets and large phones, Between 992px - 1100px) */
+@media only screen and (max-width: 1400px) and (min-width: 900px) {
+  .circular-progress-div {
+    /* background-color: red; */
+    /* border: 1px solid white; */
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    z-index: 9999;
+    width: 50vh;
+    height: 30vh;
+    /* border-radius: 50%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #preloader .preLogo{
+    position: absolute;
+    left:50%;
+    top:45%;
+    transform: translate(-50%,-50%);
+    height: auto;
+    width: 40%;
+    -webkit-filter: drop-shadow(5px 5px 5px #fef879);
+    filter: drop-shadow(1px 1px 5px #fef879);
+    transition: 0.5s all;
+    animation: blinking 4s linear infinite;
+  
+  }
+  .box1{
+    position:absolute;
+   width: auto;
+   height: 30%;
+   top: 45%;
+   left: 22%;
+   transform: translate(-50%,-50%);
+   animation: floating11 3s 0.2s  ease-in-out infinite;
+   /* clip-path: polygon(0 0, 95% 0%, 100% 100%, 5% 100%); */
+   
+  }
+  .box2{
+    position:absolute;
+    width: auto;
+   height: 30%;
+    top: 46%;
+    left: 18%;
+    transform: translate(-50%,-50%);
+    animation: floating11 3s 0.3s ease-in-out infinite;
+  }
+  .box3{
+    /* border: 1px solid white; */
+    position:absolute;
+    width: auto;
+   height: 30%;
+    top: 45%;
+    right: -1%;
+    transform: translate(-50%,-50%);
+    animation: floating11 3s 0.2s ease-in-out infinite;
+  }
+  .loadText{
+    opacity: 0;
+    bottom: 15%;
+    left: 50%;
+    transform: translate(-50%,0%);
+
+    font-size: 3vw;
+
+    /* background-color: red; */
+  }
+}
+  
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -375,7 +451,7 @@ img{
 .navbarBrandImage{
   
   margin-left: 0px;
-  height: 60px;
+  height: 4vw;
   pointer-events: none;
 }
 .nav-link{ 
@@ -801,7 +877,8 @@ img{
     z-index: 0;
     width: 100%;
     height: 100vh;
-    /* object-fit:cover; */
+    object-fit:cover;
+    transition: 1s all;
   }
  
   .videoHeadingBG2{
@@ -913,7 +990,7 @@ img{
     padding: 0;
     margin: 0;
     position: absolute;
-    bottom: 20%;
+    bottom: 27%;
     left: 50%;
     width: 100%;
   
@@ -925,7 +1002,7 @@ img{
     padding: 0;
     margin: 0;
     position: absolute;
-    bottom: 10%;
+    bottom: 15%;
     left: 50%;
     width: 100%;
   
@@ -1021,34 +1098,63 @@ img{
     font-size: 7vw;
   }
   .videoHeadingDiv1{
-    top: 52%;
-
+    top: 48%;
+  }
+  .vh1-2{
+    font-size: 6.3vw;
   }
   .videoHeadingDiv2{
-
-    bottom: 32%;
+    bottom: 34%;
     left: 50%;
-    width: 100%;
-  
+    width: 100%;  
     transform: translate(-50%,-50%);
     align-content: center;
     text-align: center;
   }
-  
+  .videoHeading2{
+    text-transform: uppercase;
+    width: 70%;
+    text-align: center; 
+    font-family: 'Teko', sans-serif;
+    font-size: 2.6vw;
+    letter-spacing: 1px;
+    line-height: 1;
+    color: black;
+    font-weight: 100;
+    text-shadow: 1px 1px 1px #111;
+    
+    /* opacity: 0; */
+  }
+  /* .xx{
+    animation: scaleup 21s linear infinite;
+    transition: 1s all;
+  } */
+
+  @keyframes scaleup {
+    44%{
+      /* opacity: 0; */
+    }
+    54%{
+      /* opacity: 1; */
+    }
+    55%{
+      font-size: 2.6vw;
+    }
+    99%{
+      /* opacity: 1; */
+      font-size: 3vw;
+    }
+  }
   .videoHeadingButton{  
-    line-height: 2.5vw;
-    font-size: 2.5vw;
+    line-height: 4vw;
+    font-size: 4vw;
     font-weight: 500;
     width: fit-content;
     padding-left: 2vw;
-    padding-right: 2vw;
-    
+    padding-right: 2vw;    
   }
   .VideoHeadingButtonRow{
-
-
-    bottom: 24%;
-
+    bottom: 22%;
   }
 
 }
@@ -1091,8 +1197,9 @@ img{
     transform: translate(0%,-50%); */
     z-index: 100;
     width: 100%;
-    height: 70vh;
-    background-color: #000;
+    height: 85vh;
+    /* background-color: red; */
+    /* border: 1px solid white; */
   }
   .videoNFTBG video{
     position: absolute;
@@ -1304,7 +1411,7 @@ img{
 /* Large device (portrait tablets and large phones, Between 992px - 1100px) */
 @media only screen and (max-width: 1400px) and (min-width: 900px) {
   .videoNFTBG{
-    margin-top: 6vh;
+    margin-top: 0vh;
   }
 
   .NFTHeading1{
@@ -1611,7 +1718,7 @@ background: linear-gradient(90deg, rgba(0,0,0,0.691841702501313) 2%, rgba(0,0,0,
 }
 .slider .card{
   overflow: hidden;
-  height: 60vh;
+  height: 55vh;
   width: 22vw;
   border: 1px solid rgba(255, 255, 255, 0.2);
 	border-top: 1px solid rgba(255,255,255,0.2);
@@ -1683,7 +1790,7 @@ background: linear-gradient(90deg, rgba(0,0,0,0.691841702501313) 2%, rgba(0,0,0,
   }
   .slider .card{
     overflow: hidden;
-    height: 30vh;
+    height: 25vh;
     width: 50vw;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-top: 1px solid rgba(255,255,255,0.2);
@@ -1739,7 +1846,7 @@ background: linear-gradient(90deg, rgba(0,0,0,0.691841702501313) 2%, rgba(0,0,0,
   .slider .card{
     position: relative;
     z-index: 100;
-    height: 50vh;
+    height: 40vh;
     width: 26vw;
     background: rgba(255,255,255,0.1); 
   }
@@ -1871,17 +1978,26 @@ background: linear-gradient(90deg, rgba(0,0,0,0.691841702501313) 2%, rgba(0,0,0,
   height: 100vh;
   overflow: hidden;
 }
-
-.BWESectionDiv video{
-  /* border: 1px solid white; */
+.bweVideoDiv{
   position: absolute;
+  top:0%;
+  left:0%;
   width: 100%;
   height: 75vh; 
-  top: 0%;
-  left: 0;
   overflow: hidden;
+  /* border: 1px solid white; */
+}
+.BWESectionDiv video{
+  
+  position: absolute;
+  width: 100%;
+  height: auto; 
+  top: -5%;
+  left: 0;
+  /* overflow: hidden; */
   z-index: 1;
   background-color: black;
+  /* object-fit: cover; */
 }
 
 /* canvas.BWECanvas{
@@ -2007,6 +2123,32 @@ background: linear-gradient(90deg, rgba(0,0,0,0.691841702501313) 2%, rgba(0,0,0,
     width: 100%;
   }
 }
+
+@media only screen and (max-width: 1400px) and (min-width: 900px) {
+  .bweVideoDiv{
+    position: absolute;
+    top:0%;
+    left:0%;
+    width: 100%;
+    height: 70vh; 
+    overflow: hidden;
+    /* border: 1px solid white; */
+  }
+  .BWESectionDiv video{
+  
+    position: absolute;
+    width: 100%;
+    height: 70vh; 
+    top: 10%;
+    left: 0;
+    /* overflow: hidden; */
+    z-index: 1;
+    background-color: black;
+    object-fit: cover;
+  }
+}
+
+
 .buttonHeadNav {
   position: relative;
   padding: 16px 30px;
@@ -2695,7 +2837,7 @@ background: linear-gradient(90deg, rgba(0,0,0,0.691841702501313) 2%, rgba(0,0,0,
 	cursor: pointer;
 }
 .shotButton .glare {
-  animation: moveright 1.6s linear infinite;
+  animation: moveright 2.5s 1s linear infinite;
 	
 	-webkit-transition: all 0.6s linear;
 	      transition: all 0.6s linear;
@@ -2711,14 +2853,15 @@ background: linear-gradient(90deg, rgba(0,0,0,0.691841702501313) 2%, rgba(0,0,0,
 }
 .glare {
 	position: absolute;
-	width: 20px;
+	width: 25px;
 	height: 200%;
 	-webkit-transform: rotate(25deg);
 	  -ms-transform: rotate(25deg);
 	      transform: rotate(25deg);
-	background-color: rgba(255, 255, 255, 0.544);
+	background-color: rgba(255, 255, 255, 1);
 	top: -50%;
 	right: 120%;
+  opacity: 0.3;
 }
 .glare:after {
 	content: '';
@@ -2862,7 +3005,7 @@ background: linear-gradient(90deg, rgba(0,0,0,0.691841702501313) 2%, rgba(0,0,0,
   }
 }
 
-  
+
 
 /*--------------------------------------------------------------
 # NFT Avatar Div
@@ -3119,6 +3262,7 @@ background: linear-gradient(90deg, rgba(0,0,0,0.691841702501313) 2%, rgba(0,0,0,
 }
 
 .TeamHuddleHeading1{
+  margin-top: 2vh;
   text-align: center;
   font-family: 'A4 Speed Bold', sans-serif;
   font-size: 4vw;
@@ -3154,6 +3298,7 @@ background: linear-gradient(90deg, rgba(0,0,0,0.691841702501313) 2%, rgba(0,0,0,
   transform: translate(0%,-50%);
   font-family: 'Teko',sans-serif;
   font-size: 3vw;
+  line-height: 0.8;
   color: white;
   text-align: justify;
 }
@@ -3229,6 +3374,15 @@ background: linear-gradient(90deg, rgba(0,0,0,0.691841702501313) 2%, rgba(0,0,0,
     margin-top: -3vw;
     color: white;
   }
+  .TeamHuddleText{
+    position: absolute;
+    top: 52%;
+    transform: translate(0%,-50%);
+    font-family: 'Teko',sans-serif;
+    font-size: 3.5vw;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+  } 
 }
 
 /*--------------------------------------------------------------
