@@ -208,6 +208,60 @@ img{
 
 /* Extra Small devices (portrait tablets and large phones, 600px and low) */
 @media only screen and (max-width: 450px) {
+  
+.circular-progress-div {
+  /* background-color: red; */
+  /* border: 1px solid white; */
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%,0%);
+  z-index: 9999;
+  width: 50vh;
+  height: 30vh;
+  /* border-radius: 50%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circular-progress{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,0%);
+  z-index: 9999;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ab9f75;
+}
+.inner-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: calc(6vh - 5px);
+  height: calc(6vh - 5px);
+  border-radius: 50%;
+  background-color: black;
+}
+.loadText{
+  opacity: 0;
+  font-family: 'Teko',sans-serif;
+  text-align: center;
+  position: absolute;
+  bottom: 28%;
+  left: 50%;
+  transform: translate(-50%,0%);
+  width: 100%;
+  height: fit-content;
+  font-size: 6vw;
+  color: white;
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  /* background-color: red; */
+}
   #preloader .preLogo{
     position: absolute;
     left:50%;
@@ -2711,7 +2765,34 @@ background: linear-gradient(90deg, rgba(0,0,0,0.691841702501313) 2%, rgba(0,0,0,
   transition: opacity 2s linear;
 }   */
 @media only screen and (max-width: 600px) {
+  .dressChangeDiv .shotRow{
 
+    position: absolute;
+    z-index: 9999;
+    width: fit-content;
+    bottom: 7%;
+    left: 49.2%;
+    transform: translate(-50%,0%);
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .shotButton{
+    cursor: pointer;
+    font-family: 'Teko', sans-serif;
+    padding-top: 0.6vw;
+    line-height: 10vw;
+    font-size: 10vw;
+    font-weight: 550;
+    text-align: center;
+    width: fit-content;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    background: rgb(189,160,0);
+    background: linear-gradient(180deg, rgba(189,160,0,1) 0%, rgba(255,219,73,1) 50%, rgba(227,145,15,1) 100%);
+    outline: none;
+    border: none;
+    color: black
+  }
 }
 
 /* Small devices (portrait tablets and large phones, Between 600px - 768px) */
